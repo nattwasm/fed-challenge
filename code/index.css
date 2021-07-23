@@ -21,28 +21,21 @@ h5 {
   font-family: "Merriweather", Times New Roman, serif;
 }
 
-.button {
-}
-
 /*******************************
               Page
 *******************************/
 
 /* Hero ------------------------------------------------ */
 .hero {
-  /* border: 1px dashed red; */
   background-color: #dff1e8;
 }
 
 .hero__container {
-  /* border: 1px dashed red; */
-
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .hero__content > h1 {
-  /* border: 1px dashed red; */
   font-weight: 400;
   font-size: 36px;
   margin-top: 124px;
@@ -89,17 +82,14 @@ h5 {
 
 /* Page ------------------------------------------------ */
 .card__container {
-  /* border: 1px dashed red; */
-
   display: grid;
   grid-column-gap: 54px;
   grid-row-gap: 73px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   margin: 110px auto;
 }
-.card {
-  /* border: 1px dashed red; */
 
+.card {
   box-shadow: 0px 15px 35px rgba(50, 50, 93, 0.1), 0px 5px 15px rgba(0, 0, 0, 0.07);
   text-decoration: none;
 }
@@ -120,18 +110,16 @@ h5 {
 }
 
 .card__content {
-  /* border: 1px dashed red; */
   padding: 32px;
 }
 
 .card__content h5 {
-  /* border: 1px dashed red; */
   color: #000000;
   font-family: Lato;
   font-weight: 600;
   font-size: 22px;
   line-height: 26px;
-  margin: 0;
+  margin: 0 0 17px;
 }
 
 .card__content p {
@@ -139,22 +127,21 @@ h5 {
   font-family: Lato;
   font-size: 18px;
   line-height: 24px;
+  margin: 0;
 }
 
 .bottom {
-  /* border: 1px dashed red; */
-
   display: flex;
   background-image: url(./images/cta-bg.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
-  justify-content: space-around;
   height: 253px;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .bottom__box {
-  /* border: 1px dashed red; */
   max-width: 300px;
 }
 
@@ -171,8 +158,6 @@ h5 {
 
 /* Footer ---------------------------------------------- */
 .footer {
-  /* border: 1px dashed red; */
-
   background-color: #202020;
   height: 56px;
 }
@@ -205,8 +190,46 @@ h5 {
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
+  .hero__container {
+    /* border: 1px dashed red; */
+    grid-template-columns: initial;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__content > button {
+    margin-bottom: 64px;
+  }
+
+  .card__container {
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
 }
 
 /* Mobile */
 @media only screen and (max-width: 767px) {
+  .card__container {
+    margin: 64px auto;
+  }
+
+  .card__thumbnail {
+    height: 320px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+    height: initial;
+    padding-bottom: 32px;
+  }
 }
