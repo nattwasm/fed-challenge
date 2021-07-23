@@ -2,7 +2,8 @@
             Global
 *******************************/
 
-html, body {
+html,
+body {
   font-family: "Lato", Arial, sans-serif;
   margin: 0px;
   padding: 0px;
@@ -20,44 +21,92 @@ h5 {
   font-family: "Merriweather", Times New Roman, serif;
 }
 
-
 .button {
-
 }
-
-
 
 /*******************************
               Page
 *******************************/
 
 .hero {
-
+  /* border: 1px dashed red; */
+  background-color: #dff1e8;
 }
 
-.page {
+.hero > .container {
+  /* border: 1px dashed red; */
 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* height: 300px; */
+}
+
+.hero > .container > .content {
+  /* border: 1px dashed blue; */
+}
+
+.hero > .container > .content > h1 {
+  /* border: 1px dashed red; */
+  font-weight: 400;
+  font-size: 36px;
+  margin-top: 124px;
+  max-width: 319px;
+}
+
+.hero > .container > .content > p {
+  color: #555555;
+  font-family: Lato;
+  font-size: 19px;
+  line-height: 32px;
+  margin-bottom: 56px;
+  max-width: 406px;
+}
+
+.hero > .container > .content > button {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.08) 100%), #4daf7c;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+  color: #ffffff;
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 112px;
+
+  line-height: 18px;
+
+  padding: 10px 14px;
+
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.hero > .container > .image {
+  display: flex;
+  align-items: center;
+}
+
+.hero > .container > .image > img {
+  max-width: 578px;
+}
+
+/* Page ------------------------------------------------ */
+.page {
+  height: 1000px;
 }
 
 .footer {
-
 }
 
-
 /*******************************
-         Responsive
+          Responsive
 *******************************/
 
 /* Small Monitor */
 @media only screen and (min-width: 1025px) and (max-width: 1199px) {
-
-
 }
-
 
 /* Tablet */
 @media screen and (max-width: 1024px) {
-
 }
 
 /* Mobile */
