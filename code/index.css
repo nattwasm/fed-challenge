@@ -142,16 +142,19 @@ h5 {
 }
 
 .bottom {
-  background-image: url(./images/cta-bg.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
+
   display: flex;
+  background-image: url(./images/cta-bg.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  justify-content: space-around;
   height: 253px;
 }
 
 .bottom__box {
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
   max-width: 300px;
 }
 
@@ -168,10 +171,28 @@ h5 {
 
 /* Footer ---------------------------------------------- */
 .footer {
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
 
   background-color: #202020;
   height: 56px;
+}
+
+.footer__container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.footer img {
+  height: 20px;
+  margin-right: 20px;
+  width: 70px;
+}
+
+.footer p {
+  color: #646464;
+  font-size: 11px;
+  line-height: 13px;
 }
 
 /*******************************
